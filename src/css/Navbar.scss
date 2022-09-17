@@ -1,0 +1,75 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.nav-container{
+    height:$navbar-height;
+    width: $navbar-width;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 50px;
+    background-color: $quaternary-color;
+}
+
+
+.logo {
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+    height:10vh;
+
+    .logo-icon {
+        margin-right: 10px;
+        width: $large;
+        height: $large;
+        border:2px solid $quaternary-color;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px 3px $tertiary-color;
+        padding-left:10px;
+        font-size: $medium;
+        color: $secondary-color;
+        font-family: cursive;
+        background-color: $quaternary-color;
+    }
+
+    .logo-heading {
+        font-family: cursive;
+    }
+
+    .praco {
+        color: $secondary-color;
+        font-weight: bold;
+    }
+
+    .gram {
+        color: #89CFF0;
+        font-weight: lighter;
+    }
+}
+
+.account-nav {
+    height: 50vh;
+    .account{
+         @extend .logo-heading;
+         margin-left:5vw;
+         font-weight: lighter;
+    }
+
+    .navitem {
+        @extend .logo;
+        flex-direction: column;
+        margin-top: 0;
+       
+        ul{
+            list-style: none;
+           display: flex; 
+           flex-direction: column;
+           height: 40vh;
+           justify-content: space-around;
+        }
+
+        li {
+            @include Link;
+        }
+    }
+}
+
