@@ -1,13 +1,19 @@
 @import 'variables.scss';
 
-@mixin link {
+@mixin Link {
     text-decoration :none;
-    font-size:clamp(1rem, 2.5vw, 2rem);
+    font-size:clamp(0.5rem, 1.5vw, 1.5rem);
     color:$link-color;
+    margin-bottom: 10px;
+    cursor: pointer;
 
     &:hover{
         color:$secondary-color;
     } 
+
+    &:active{
+        color:$secondary-color;   
+    }
 }
 @mixin flex-display($flex-direction){
     display:flex;
