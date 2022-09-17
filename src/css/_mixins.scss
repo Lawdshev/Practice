@@ -9,4 +9,9 @@
         color:$secondary-color;
     } 
 }
-
+@mixin flex-display($flex-direction){
+    display:flex;
+    flex-direction: $flex-direction;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,17 @@
+.activity-container {
+  border: 3px solid white;
+  width: 200px;
+  min-height: 150px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #fff, #b9d9eb);
+  display: flex;
+  flex-direction: column;
+}
+
+.act1 {
+  width: 70%;
+  height: 10vh;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=Activity-comp.css.map */

@@ -1,0 +1,49 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.activity-container{
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: $picture-border-radius;
+    width: 250px;
+    height: 25vh;
+    display: flex;
+    @include flex-display(column);
+    background-color:$tertiary-color ;
+    justify-content: space-around;
+    .act1{
+        @include flex-display(row);
+        width: 80%;
+        justify-content: space-between;
+        .img{
+            width:30% ;
+            background-color: yellow;
+            height: 60px;
+            border-radius: $picture-border-radius;
+        }
+        .post{
+            @include flex-display(column);
+            height: 60px;
+            width: 70%;
+            justify-content: space-around;
+        }
+    }
+    .act2{
+        @include flex-display(column);
+        width: 80%;
+        .texts{
+            width: 100%;
+            @include flex-display(row);
+            justify-content: space-between;
+        }
+        .bar{
+            width: 100%;
+            height: 5px;
+            background-color: white;
+            border-radius: $picture-border-radius;   
+        }
+    }
+
+   
+}
+
