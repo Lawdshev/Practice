@@ -1,18 +1,26 @@
 $primary-color:#b9d9eb;
 $secondary-color:rgb(20, 20, 156);
 $tertiary-color:#f0f8ff;
-$quaternary-color: rgb(236, 225, 225);
+$quaternary-color: white;
 $link-color: rgb(24, 23, 23);
 
 //font sizes 
 $small:15px;
 $medium:20px;
 $large:30px;
+$extra-large:50px;
 
 
 //border
 $picture-border :3px solid white;
 $story-border:3px dashed rgb(20, 20, 156);
+
+//component-sizes
+$post-height:80vh;
+$navbar-height:100vh;
+$navbar-width:20vw;
+
+
 
 
 
