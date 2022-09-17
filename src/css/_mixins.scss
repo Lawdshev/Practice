@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+@mixin link {
+    text-decoration :none;
+    font-size:clamp(1rem, 2.5vw, 2rem);
+    color:$link-color;
+
+    &:hover{
+        color:$secondary-color;
+    } 
+}
+

@@ -1,0 +1,13 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body{
+    background-color: $secondary-color;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: $large;
+    color: $primary-color;
+    border:$picture-border;
+}
