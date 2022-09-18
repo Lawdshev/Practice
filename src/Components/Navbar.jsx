@@ -1,10 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome} from '@fortawesome/free-solid-svg-icons';
-import { faUser} from '@fortawesome/free-solid-svg-icons';
-import {faPaperPlane} from '@fortawesome/free-solid-svg-icons';
-import {faHeart} from '@fortawesome/free-solid-svg-icons';
-import {faCog} from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   return (
@@ -18,19 +12,19 @@ function Navbar() {
             <div className="navitem">
                 <ul className='nav-list'>
                    <li>
-                   <FontAwesomeIcon icon={faHome}/> Home
+                   <i className="fa-solid fa-house"></i> Home
                    </li>
                    <li>
-                   <FontAwesomeIcon icon={faUser}/> My profile
+                   <i className="fa-solid fa-user"></i> My profile
                    </li>
                    <li>
-                   <FontAwesomeIcon icon={faPaperPlane}/> Messages
+                   <i className="fa-solid fa-paper-plane"></i>Messages
                    </li>
                    <li>
-                   <FontAwesomeIcon icon={faHeart}/> Activity 
+                   <i className="fa-solid fa-heart"></i> Activity 
                    </li>
                    <li>
-                   <FontAwesomeIcon icon={faCog}/> Settings
+                   <i className="fa-solid fa-gear"></i> Settings
                    </li>
                 </ul>
             </div>
