@@ -9,13 +9,13 @@
     border-bottom-left-radius: 50px;
     align-items: center;
     border-left: none;
+    
     .profile-board{
         width: 50%;
         height:15%;
         align-items: center;
         display: flex;
         justify-content: space-around;
-        background-color: red;
         .prof-img{
             width: 50px;
             height: 50px;
@@ -29,11 +29,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: antiquewhite;
 
         h1{
             align-self: flex-start;
             font-size: $X-large;
+            color: $secondary-color;
         }
     }
 }

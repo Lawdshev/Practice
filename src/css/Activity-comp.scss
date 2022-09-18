@@ -2,19 +2,21 @@
 @import 'mixins.scss';
 
 .activity-container{
-    background-color: aliceblue;
+    margin-top: 10px;
+    background: linear-gradient(to right,white,$primary-color);
     width: 100%;
     height: 25%;
     border-radius: 20px;
     @include Flex-display(column);
     align-items: center;
     justify-content: space-around; 
+    border: 1px solid white;
     .act1{
-        background-color: orange;
+        margin-top: 15%;
         @include Flex-display(row);
        .img{
             @include Size(50px,50px);
-            background-color:green;
+            background-color: antiquewhite;
        } 
        .post{
             @include Flex-display(column);
@@ -46,14 +48,32 @@
         }
         .bar{
             width: 80%;
-            background-color: white;
             height: 8px;
+            display: flex;
             border-radius: 5px;
+            background-color: white;
             .progress{
                 width: 80%;
                 background-color: yellow;
-                height: 100%;
+                border-radius: 5px;
             }
+        }
+    }
+    .act3{
+        @include Flex-display(row);
+        font-size: $medium;
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+        
+        .comments{
+            font-size: $medium;
+        }
+        .time{
+            background-color: $secondary-color;
+            border-radius: 20px;
+            padding: 5px 10px;
+            color: white;
         }
     }
 }

@@ -21,7 +21,12 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+<<<<<<< HEAD
     background-color: yellow;
+=======
+    background-color: $primary-color;;
+    border: $picture-border;
+>>>>>>> c8aaba160a325d99a1f644fffa933a65ad999441
 }
 
 @mixin Flex-display($direction){
@@ -32,4 +37,11 @@
     width: $width;
     height: $height;
 }
-
+@mixin pages {
+    width: 80%;
+    min-height: 100vh;
+    align-self: center;
+    margin: auto;
+    @include Flex-display(column);
+    align-items: center;
+}

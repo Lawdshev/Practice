@@ -13,7 +13,6 @@ function Dashboard() {
         <div className="popular-activities">
             <h1>Popular Activities</h1>
             <ActivityComp/>
-
         </div>
         
     </div>
