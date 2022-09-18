@@ -1,4 +1,8 @@
 import React from 'react';
+import Group from './Group';
+import GroupInfo from './GroupInfo';
+import {Link} from 'react-router-dom';
+
 
 function Navbar() {
   return (
@@ -11,27 +15,29 @@ function Navbar() {
         <div className='account-nav'>
             <h1 className='account'>Account</h1>
             <div className="navitem">
-                <ul className='nav-list'>
-                   <li>
-                   <i className="fa-solid fa-house"></i> Home
-                   </li>
-                   <li>
-                   <i className="fa-solid fa-user"></i> My profile
-                   </li>
-                   <li>
-                   <i className="fa-solid fa-paper-plane"></i>Messages
-                   </li>
-                   <li>
-                   <i className="fa-solid fa-heart"></i> Activity 
-                   </li>
-                   <li>
-                   <i className="fa-solid fa-gear"></i> Settings
-                   </li>
-                </ul>
-            </div>
+                  <Link to='/'>
+                    <div className="linkitem"><i className="fa-solid fa-house"></i><span>Home</span></div>
+                  </Link>
+                  <Link to='/profile'>
+                    <div className="linkitem"><i className="fa-solid fa-user"></i><span>My profile</span></div>
+                  </Link>
+                  <Link to='/message'>
+                    <div className="linkitem"><i className="fa-solid fa-paper-plane"></i><span>Messages</span></div>
+                  </Link>
+                  <Link to='/activity'>
+                    <div className="linkitem"><i className="fa-solid fa-heart"></i><span>Activity</span></div>
+                  </Link>
+                  <Link to='/settings'>
+                    <div className="linkitem"><i className="fa-solid fa-gear"></i><span>Settings</span></div>
+                  </Link>
+             </div>
         </div>
         <div className='group-nav'>
-            
+             <h2 className='group-heading'>Your group</h2>
+            {GroupInfo.map((info) => (
+            <Group key={info.id}
+                   name={info.name}
+                   image={info.image} />))}
         </div>
     </div>
   )

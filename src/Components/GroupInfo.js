@@ -1,20 +1,24 @@
+import figma from '../your-group images/figma.png';
+import dribble from '../your-group images/dribble.png';
+import behance from '../your-group images/behance.png';
+
 const GroupInfo = [
     {
         id:1,
         name:'Figma community',
-        imageSource:'figma.png'
+        image:figma
     },
 
     {
         id:2,
         name:'Behance community',
-        imageSource:'behance.png'
+        image:behance
     },
 
     {
         id:3,
         name:'Dribble community',
-        imageSource:'dribble.png'
+        image: dribble
     }
 ]
 

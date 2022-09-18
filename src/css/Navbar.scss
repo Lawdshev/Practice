@@ -48,22 +48,60 @@
     .account-nav {
         height: 50%;
         width: 80% ;
-        background-color: aquamarine;
         display: flex;
         flex-direction: column;
         align-items: center;
         .account{
              font-weight: 700;
              font-size: 20px;
-             align-self: flex-start    
+             align-self: flex-start;    
         }
         .navitem {
-            @extend .logo;
-            flex-direction: column;
-            margin-top: 0;
+            @include Flex-display(column);
+            justify-content: space-around;
+            height: 90%;
+            a{
+                @include Link;
+            }
+
+          span{
+            text-decoration: none;
+            margin-left: 10px;
+          } 
+
+         }     
+    }
+
+    .group-nav {
+        height: 50%;
+        width: 80% ;
+        display: flex;
+        flex-direction: column;
+    
+        h2{
+            font-size:$X-large;
+            font-weight: lighter;
+            color: $secondary-color;
+            align-self: flex-start;
+        }
+    
+        .group{
+            display: flex;
+            align-items: center;
+            margin-left: 20px; 
         }
 
+        .group-name {
+           font-size: $large;
+        }
+    
+        img{
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
     }
+    
     
 }
 
