@@ -33,4 +33,11 @@
     width: $width;
     height: $height;
 }
-
+@mixin pages {
+    width: 80%;
+    min-height: 100vh;
+    align-self: center;
+    margin: auto;
+    @include Flex-display(column);
+    align-items: center;
+}
