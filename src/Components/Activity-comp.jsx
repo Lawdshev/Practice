@@ -22,8 +22,8 @@ function ActivityComp() {
             </div>
         </div>
         <div className="act3">
-            <span className="comments"></span>
-            <span className="time"></span>
+            <span className="comments"><i className="fa-brands fa-rocketchat"></i>123</span>
+            <span className="time"><i class="fa-solid fa-stopwatch"></i> 2 days left</span>
         </div>
     </div>
   )
