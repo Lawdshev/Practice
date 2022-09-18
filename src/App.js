@@ -1,5 +1,6 @@
 import './css/style';
 import Navbar from './Components/Navbar';
+import Dashboard from './Components/Dashboard';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Profile from "./Pages/Profile";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Activity" element={<Activity />} />
           <Route path="/Settings" element={<Settings />} />
         </Routes>
+        <Dashboard/>
       </Router>
     </div>
   );

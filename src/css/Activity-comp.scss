@@ -1,0 +1,59 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.activity-container{
+    background-color: aliceblue;
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    @include Flex-display(column);
+    align-items: center;
+    justify-content: space-around; 
+    .act1{
+        background-color: orange;
+        @include Flex-display(row);
+       .img{
+            @include Size(50px,50px);
+            background-color:green;
+       } 
+       .post{
+            @include Flex-display(column);
+            margin-left: 5px;
+            align-items: center;
+            justify-content: space-around;
+            height: 70%;
+            .text1{
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .text2{
+                font-size: 13px;
+                align-self: flex-start;
+            }
+       }
+    }
+    .act2{
+        @include Flex-display(column);
+        font-size: $medium;
+        width: 100%;
+        align-items: center;
+        
+        .texts{
+            @include Flex-display(row);
+            justify-content: space-between;
+            width: 80%;
+        }
+        .bar{
+            width: 80%;
+            background-color: white;
+            height: 8px;
+            border-radius: 5px;
+            .progress{
+                width: 80%;
+                background-color: yellow;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -2,74 +2,68 @@
 @import 'mixins.scss';
 
 .nav-container{
-    height:$navbar-height;
-    width: $navbar-width;
-    display: flex;
-    flex-direction: column;
+    @include Container;
     border-top-right-radius: 50px;
-    background-color: yellow;
-}
-
-
-.logo {
-    margin-left: 3vw;
-    display: flex;
+    left: 0;
+    border-right: none;
     align-items: center;
-    height:10vh;
 
-    .logo-icon {
-        margin-right: 10px;
-        width: $large;
-        height: $large;
-        border:2px solid $quaternary-color;
-        border-radius: 20px;
-        box-shadow: 3px 3px 3px 3px $tertiary-color;
-        padding-left:10px;
-        font-size: $medium;
-        color: $secondary-color;
-        font-family: cursive;
-        background-color: $quaternary-color;
+    .logo {
+        display: flex;
+        align-items: center;
+        height:15%;
+    
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            border:2px solid $quaternary-color;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px 3px $tertiary-color;
+            font-size: $X-large;
+            color: $secondary-color;
+            font-family: cursive;
+            background-color: $quaternary-color;
+            text-align: center;
+            text-justify: center;
+            font-weight:700 ;
+            background-color: antiquewhite;
+        }
+    
+        .logo-heading {
+            font-family: cursive;
+            margin-left: 10px;
+            font-size: $X-large;
+        }
+    
+        .praco {
+            color: $secondary-color;
+            font-weight: bold;
+        }
+    
+        .gram {
+            color: #89CFF0;
+            font-weight: lighter;
+        }
     }
-
-    .logo-heading {
-        font-family: cursive;
-    }
-
-    .praco {
-        color: $secondary-color;
-        font-weight: bold;
-    }
-
-    .gram {
-        color: #89CFF0;
-        font-weight: lighter;
-    }
-}
-
-.account-nav {
-    height: 50vh;
-    .account{
-         @extend .logo-heading;
-         margin-left:5vw;
-         font-weight: lighter;
-    }
-
-    .navitem {
-        @extend .logo;
+    .account-nav {
+        height: 50%;
+        width: 80% ;
+        background-color: aquamarine;
+        display: flex;
         flex-direction: column;
-        margin-top: 0;
-       
-        ul{
-            list-style: none;
-           display: flex; 
-           flex-direction: column;
-           height: 40vh;
-           justify-content: space-around;
+        align-items: center;
+        .account{
+             font-weight: 700;
+             font-size: 20px;
+             align-self: flex-start    
+        }
+        .navitem {
+            @extend .logo;
+            flex-direction: column;
+            margin-top: 0;
         }
 
-        li {
-            @include Link;
-        }
     }
+    
 }
 

@@ -8,8 +8,8 @@ function ActivityComp() {
                 <img src="" alt="" />
             </div>
             <div className="post">
-                <span>Disaster Donation</span>
-                <span>Emily Hofter</span>
+                <span className='text1'>Disaster Donation</span>
+                <span className='text2'>Emily Hofter</span>
             </div>
         </div>
         <div className="act2">
@@ -18,7 +18,7 @@ function ActivityComp() {
                 <span>80%</span>
             </div>
             <div className="bar">
-                <span className='progress' style={{width:'80%'}}></span>
+                <span className='progress'></span>
             </div>
         </div>
         <div className="act3">

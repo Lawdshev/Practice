@@ -4,7 +4,8 @@ function Navbar() {
   return (
     <div className='nav-container'>
         <div className='logo'>
-            <h1 className='logo-icon'>P</h1>
+          <div className='logo-icon'>P</div>
+            
             <h2 className='logo-heading'><span className='praco'>Praco</span><span className='gram'>gram</span></h2>
         </div>
         <div className='account-nav'>

@@ -15,4 +15,22 @@
         color:$secondary-color;   
     }
 }
+@mixin Container{
+    height:$navbar-height;
+    width: $navbar-width;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: yellow;
+    border: $picture-border;
+}
+
+@mixin Flex-display($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+@mixin Size($width,$height){
+    width: $width;
+    height: $height;
+}
 
