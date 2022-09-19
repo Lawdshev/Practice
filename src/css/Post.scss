@@ -1,0 +1,37 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.post-container{
+    width: 150px;
+    height: 230px;
+    background-color: yellow;
+    margin: auto;
+    @include Flex-display(column);
+    align-items: center;
+    justify-content: center;
+
+    .img-cont{
+        width: 100%;
+        height: 200px;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        border: 3px solid white;
+    }
+    .actions{
+        width: 100%;
+        height: 30px;
+        @include Flex-display(row);
+        justify-content: space-between;
+        align-items: center;
+        .reactions{
+            width: 30%;
+            height: 100%;
+            @include Flex-display(row);
+            justify-content: space-between;
+            align-items: center;
+        }
+        .message{
+            @extend .reactions
+        }
+    }
+}
