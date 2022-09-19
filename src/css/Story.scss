@@ -1,0 +1,20 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+.story-div {
+    @include Flex-display(row);
+    align-items: center;
+    justify-content: flex-end;
+    height: 10vh;
+
+        img{
+            height: 70px;
+            width: 70px;
+            border: $story-border;
+            border-radius: 35px;
+            margin-right: 2px;
+        }
+   
+}
+

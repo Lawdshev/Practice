@@ -5,8 +5,8 @@ function Dashboard() {
   return (
     <div className='dashboard-container'>
         <div className="profile-board">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
-            <i class="fa-solid fa-bell"></i>
+            <i className="fa-solid fa-arrow-up-from-bracket"></i>
+            <i className="fa-solid fa-bell"></i>
             <span className="prof-img"></span>
 
         </div>
